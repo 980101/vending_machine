@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>7세그먼트 숫자</title>
+<style>
+  .digit {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+  }
+  .segment {
+    position: absolute;
+    background: #222;
+    transition: background 0.3s;
+  }
+  .on {
+    background: red;
+  }
+
+  /* 7개의 세그먼트 위치 정의 */
+  .a { top: 0; left: 10px; width: 40px; height: 10px; }
+  .b { top: 10px; right: 0; width: 10px; height: 40px; }
+  .c { bottom: 10px; right: 0; width: 10px; height: 40px; }
+  .d { bottom: 0; left: 10px; width: 40px; height: 10px; }
+  .e { bottom: 10px; left: 0; width: 10px; height: 40px; }
+  .f { top: 10px; left: 0; width: 10px; height: 40px; }
+  .g { top: 45px; left: 10px; width: 40px; height: 10px; }
+</style>
+</head>
+<body style="background:black; text-align:center;">
+  <div class="digit">
+    <div class="segment a on"></div>
+    <div class="segment b on"></div>
+    <div class="segment c on"></div>
+    <div class="segment d on"></div>
+    <div class="segment e on"></div>
+    <div class="segment f on"></div>
+    <div class="segment g off"></div>
+  </div>
+</body>
+</html>
